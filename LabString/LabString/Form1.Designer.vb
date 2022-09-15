@@ -29,6 +29,7 @@ Partial Class Form1
         Me.UniversityTextBox = New System.Windows.Forms.TextBox()
         Me.PhoneTextBox = New System.Windows.Forms.TextBox()
         Me.CheckDataBtn = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'NameLabel
@@ -76,6 +77,7 @@ Partial Class Form1
         '
         Me.PhoneTextBox.Location = New System.Drawing.Point(83, 78)
         Me.PhoneTextBox.Name = "PhoneTextBox"
+        Me.PhoneTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(47)
         Me.PhoneTextBox.Size = New System.Drawing.Size(228, 27)
         Me.PhoneTextBox.TabIndex = 5
         '
@@ -88,11 +90,21 @@ Partial Class Form1
         Me.CheckDataBtn.Text = "Check Data"
         Me.CheckDataBtn.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(70, 169)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(53, 20)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Label1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(323, 159)
+        Me.ClientSize = New System.Drawing.Size(323, 228)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckDataBtn)
         Me.Controls.Add(Me.PhoneTextBox)
         Me.Controls.Add(Me.UniversityTextBox)
@@ -114,4 +126,5 @@ Partial Class Form1
     Friend WithEvents UniversityTextBox As TextBox
     Friend WithEvents PhoneTextBox As TextBox
     Friend WithEvents CheckDataBtn As Button
+    Friend WithEvents Label1 As Label
 End Class

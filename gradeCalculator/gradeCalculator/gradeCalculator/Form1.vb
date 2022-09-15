@@ -23,6 +23,10 @@
         Else
             grade = "Out of Range"
         End If
+
+
+        OKbtn.Text = "ko"
+
         MsgBox("Your Grade is " & grade)
 
     End Sub
