@@ -26,4 +26,16 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         WebBrowser1.Refresh()
     End Sub
+
+    Private Sub WebBrowser1_DocumentCompleted_2(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim num As Integer
+        Do Until num < 10
+            num += 1
+        Loop
+        MsgBox(num)
+    End Sub
 End Class
